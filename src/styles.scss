@@ -1,11 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-div {
-    background-color: #121212;
-    color: aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* The place for global styles */
 body {
     background-color: #121212;
+    margin: 0px;
     color:aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    margin:10px;
 }

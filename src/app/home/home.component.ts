@@ -1,12 +1,20 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import {MessageService} from 'primeng/api';
+
+interface Pricing {
+  bitcoin: {
+    usd:number
+  }
+}
+
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.css"],
   providers: [MessageService]
 })
+
 export class HomeComponent implements OnInit {
   title = "Angled";
   count = 0;
@@ -31,9 +39,13 @@ export class HomeComponent implements OnInit {
       "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
     );
   }
-  price;
+  price={
+    bitcoin: {
+      usd:NaN
+    }
+  };
   ngOnInit() {
-    this.sendReq().subscribe((data: any[]) => {
+    this.sendReq().subscribe((data: Pricing) => {
       this.price = data;
     });
   }

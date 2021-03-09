@@ -1,9 +1,9 @@
 
 <p-menubar [model]="items">
-  <ng-template pTemplate="start">
-    <div class="logo">Logo</div>
+  <ng-template pTemplate="end">
+    <img src="assets/images/logo.svg" height="40">
 </ng-template>
 </p-menubar>
-<div class="layout-wrapper">
+<div class="container">
   <router-outlet></router-outlet>
 </div>
