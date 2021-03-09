@@ -1,3 +1,5 @@
+/* Here you'll find most of the spaghetti */
+
 import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
@@ -14,6 +16,7 @@ import {MenubarModule} from 'primeng/menubar';
 import {PanelModule} from "primeng/panel";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastModule} from 'primeng/toast';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import {ToastModule} from 'primeng/toast';
     MenubarModule,
     PanelModule,
     BrowserAnimationsModule,
-    ToastModule
+    ToastModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

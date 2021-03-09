@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
       {
         label:"About",
         icon:"pi pi-info",
-        routerLink:"/info"
+        routerLink:"/about"
       }
   ];
   }

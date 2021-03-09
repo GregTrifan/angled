@@ -1,1 +1,15 @@
-<p>about works!</p>
+<h1>About Us:</h1>
+<p>We are a team of passionated <b>Lorem ipsum dolor sit amet</b></p>
+<p-card header="Lorem" [style]="{'width': '15rem', 'margin-bottom': '2em'}">
+    <ng-template pTemplate="header">
+        <img alt="" src="assets/images/script.png">
+    </ng-template>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Inventore sed consequuntur error repudiandae numquam deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
+         cupiditate neque quas!</p>
+    <ng-template pTemplate="footer">
+        <p-button label="Ok" styleClass="p-button-success" icon="pi pi-check"></p-button>
+        <p-button label="Nope" icon="pi pi-times" styleClass="p-button-danger" [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+</p-card>
