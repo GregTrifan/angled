@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
   checkNum(num:string) {
     let number = Number(num)|| false;
     console.log(number);
-    if(number===false) {
-      this.messageService.add({severity:'warn', summary: 'Warning', detail: `${num} isn't a number`});
+    if(number===false && num!=="0") {
+      this.messageService.add({severity:'warn', summary: 'Warning', detail: "That isn't a number"});
     }
   }
   constructor(private HttpClient: HttpClient,private messageService: MessageService) {}

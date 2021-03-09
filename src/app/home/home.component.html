@@ -6,7 +6,7 @@
     <h2>{{count}}</h2>
     <p-button label="Increase" (click)="increase(num.value)"></p-button>
     <p-button (click)="decrease(num.value)">Decrease</p-button>
-    <input type="number" pInputText placeholder="Value" #num> 
+    <input type="number" value="1" pInputText placeholder="Value" #num> 
     <h3>Actual BTC price: {{price.bitcoin.usd || "Loading..."}}</h3>
 </div>
   
