@@ -18,19 +18,18 @@ interface Pricing {
 export class HomeComponent implements OnInit {
   title = "Angled";
   count = 0;
-  increase(num:string) {
-    this.checkNum(num);
-    this.count += Number(num)||0;
+  increase() {
+    this.checkNum();
+    this.count += Number(this.num)||0;
   }
-  decrease(num:string) {
-    this.checkNum(num);
-    this.count -= Number(num)||0;
+  num:number = 2;
+  decrease() {
+    this.checkNum();
+    this.count -= Number(this.num)||0;
   }
-  checkNum(num:string) {
-    let number = Number(num)|| false;
-    console.log(number);
-    if(number===false && num!=="0") {
-      this.messageService.add({severity:'warn', summary: 'Warning', detail: "That isn't a number"});
+  checkNum() {
+    if(!this.num) {
+      this.messageService.add({severity:'warn', summary: 'Warning', detail: "Please enter a number"});
     }
   }
   constructor(private HttpClient: HttpClient,private messageService: MessageService) {}

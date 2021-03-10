@@ -3,9 +3,10 @@
     <h1>
       Welcome to {{ title }}!
     </h1>
-    <h1 class="text-center my-4 text-red-500">{{count}}</h1>
-    <p-button class="mr-2" label="Increase" (click)="increase(num.value)"></p-button>
-    <p-button class="mx-2" (click)="decrease(num.value)">Decrease</p-button>
-    <input type="number" value="1" pInputText placeholder="Value" #num> 
+    <h1 class="my-4 mx-4 text-red-500">{{count}}</h1>
+    <p-button class="mr-2" label="Increase" (click)="increase()"></p-button>
+    <p-button class="mx-2" (click)="decrease()">Decrease</p-button>
+    <p-inputNumber inputId="integeronly" [(ngModel)]="num" placeholder="Value">
+    </p-inputNumber>
     <h2 class="my-2">Actual BTC price: {{price.bitcoin.usd+"$" || "Loading..."}}</h2>
 </div>

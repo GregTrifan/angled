@@ -1,19 +1,19 @@
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 
-@import 'tailwindcss/components';
+@import "tailwindcss/components";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 @layer base {
-    h1 {
-      @apply text-3xl;
-    }
-    h2 {
-      @apply text-2xl;
-    }    
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
 }
 /* The place for global styles */
 body {
-    background-color: #121212;
-    margin: 0px;
-    color:aliceblue;
+  background-color: #121212;
+  margin: 0px;
+  color: aliceblue;
 }

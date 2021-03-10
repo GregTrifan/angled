@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, PrimeNGConfig } from 'primeng/api';
+import { MenuItem, PrimeNGConfig,PrimeIcons } from 'primeng/api';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,12 +14,12 @@ export class AppComponent implements OnInit {
     this.items = [
       {
           label:'Home',
-          icon:'pi pi-home',
+          icon:PrimeIcons.HOME,
           routerLink:"/"
       },
       {
         label:"About",
-        icon:"pi pi-info",
+        icon:PrimeIcons.INFO_CIRCLE,
         routerLink:"/about"
       }
   ];
