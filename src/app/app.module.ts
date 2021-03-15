@@ -1,25 +1,22 @@
-/* Angular Modules */
-import {BrowserModule} from "@angular/platform-browser";
-import {NgModule} from "@angular/core";
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+/* App Modules */
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {AppRoutingModule} from "./app-routing.module";
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import {AppComponent} from "./app.component";
-import {NoPageFoundModule} from "./no-page-found/no-page-found.module";
+import { AppComponent } from './app.component';
+import { NoPageFoundModule } from './no-page-found/no-page-found.module';
 import { AboutModule } from './about/about.module';
 import { InputTextModule } from 'primeng/inputtext';
-import {MenubarModule} from 'primeng/menubar';
-import {PanelModule} from "primeng/panel";
-
+import { MenubarModule } from 'primeng/menubar';
+import { PanelModule } from 'primeng/panel';
 
 // App Modules
-import {HomeModule} from "./home/home.module";
+import { HomeModule } from './home/home.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     // App modules
     HomeModule,
@@ -34,10 +31,8 @@ import {HomeModule} from "./home/home.module";
     MenubarModule,
     PanelModule,
     BrowserAnimationsModule,
-    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}
