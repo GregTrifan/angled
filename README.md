@@ -1,4 +1,4 @@
-# Angled [![Angular CI](https://github.com/TheSlayer-666/angled/actions/workflows/angular.yml/badge.svg)](https://github.com/TheSlayer-666/angled/actions/workflows/angular.yml)
+# Angled [![Angular CI](https://github.com/TheSlayer-666/angled/actions/workflows/angular.yml/badge.svg?branch=main)](https://github.com/TheSlayer-666/angled/actions/workflows/angular.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
